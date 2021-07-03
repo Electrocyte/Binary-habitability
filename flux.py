@@ -6,6 +6,8 @@ AU = 1.496*10**(11)    # 1 astronomical unit, in meters
 stars = []
 lums = []
 
+print("Example: spectral type: G2V; distance: 2")
+
 with open("main_sequence_data.csv","r") as f:
     file = f.readlines()
     for line in file:

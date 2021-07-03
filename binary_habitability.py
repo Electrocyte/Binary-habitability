@@ -119,7 +119,7 @@ X, Y = np.meshgrid(x, y)
 Z = temp(X, Y)
 
 # cmap=cm.RdYlGn
-plt.imshow(Z, interpolation='bilinear', cmap=cm.Greys, origin='center',
+plt.imshow(Z, interpolation='bilinear', cmap=cm.Greys, origin='lower',
                 vmax=abs(Z).max(), vmin=-abs(Z).max())
 plt.xlabel("$x$ ($10^{-2}$ AU)")
 plt.ylabel("$y$ ($10^{-2}$ AU)")
